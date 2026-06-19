@@ -218,9 +218,43 @@ Factorial of 5 is: 120
 Write a program that:
 
 1. Defines a function to check if a number is even or odd.
+fn even_or_odd (){
+ let number = 10;
+ if number % 2 == 0 {
+    println!("It is even")
+ } else {
+    println!("it is odd")
+ }
+ fn main(){
+     is_even_or_odd(10);
+    is_even_or_odd(7);
+ }
+}
 2. Includes a function to calculate the area of a circle given its radius.
+fn cal_area_circle() {
+    
+}
 3. Uses a recursive function to find the greatest common divisor (GCD) of two numbers.
+// 3. GCD using recursion
+fn gcd(a: u32, b: u32) -> u32 {
+    if b == 0 {
+        a
+    } else {
+        gcd(b, a % b)
+    }
+}
 
+fn main() {
+    // Area of a circle
+    let radius = 5.0;
+    let area = area_of_circle(radius);
+    println!("Area of circle with radius {}: {:.2}", radius, area);
+
+    // GCD
+    let a = 48;
+    let b = 18;
+    println!("GCD of {} and {} is: {}", a, b, gcd(a, b));
+}
 ## 💻 Exercises - Day 4
 
 ### ✅ Exercise: Level 1

@@ -177,7 +177,7 @@ The `for` loop is useful for iterating over a collection or a range of numbers.
 
 ```rust
 fn main() {
-    for num in 1..4 {
+    for  num in 1..4 {
         println!("Num: {}", num);
     }
 }

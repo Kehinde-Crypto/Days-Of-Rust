@@ -205,6 +205,7 @@ fn main() {
     let is_active: bool = true;
     let letter: char = 'R';
     let name: &str = "Rust";
+    let array: [i32 , 2] = [0 , 1];
 
     println!("{} {} {} {} {}", integer, float, is_active, letter, name);
 }
@@ -309,7 +310,8 @@ fn main() {
     let favorite_number = 3.14; // Float type
     let is_learning_rust = true; // Boolean type
     let initial = 'Y'; // Character type
-
+    let tuple: (i32 , f32) = (66 , 66.3); // tuple
+    let array: [f32 , 6] = [0.1 , 0.2 , 0.3 , 1.2 , 4.5 , 10.0]; // array
     println!("Name: {}", name);
     println!("Updated Age: {}", age);
     println!("Favorite Number: {}", favorite_number);
@@ -325,6 +327,7 @@ fn main() {
 ### ✅ Exercise: Level 1
 
 1. Declare a variable named `my_age` and set it to your age.
+let my_age = 20;
 2. Print the value of `my_age` to the console.
 3. Create a mutable variable named `my_height` and assign it your height in centimeters. Update it to a new height.
 4. Declare a variable `my_name` and assign it your name as a string. Print it to the console.
